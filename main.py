@@ -18,7 +18,7 @@ def main():
     width, height = pyautogui.size()
 
     # Открытие и создание проекта
-    x, y = pyautogui.locateCenterOnScreen(f'{img_path}/taskbar_OL.png', confidence=0.9)
+    x, y = pyautogui.locateCenterOnScreen(f'{img_path}/taskbar_OL.png', confidence=0.8)
     pyautogui.click(x=x, y=y, duration=duration)
     time.sleep(2)
     x, y = pyautogui.locateCenterOnScreen(f'{img_path}/new.png', confidence=0.9)
